@@ -84,7 +84,7 @@ void print_statistics(unsigned char* p , int size){               // print_stati
 void print_array(unsigned char* p, int size){                    //print_array function
   int i;
   printf("The elements of the array are :\n");
-  for( i = 0 ; i < size ; i++){
+  for( i = 0 ; i < size ; i++){                               //here we print all the elements of the array.
     printf("%d ,",*p);
     p++;
   }
@@ -99,7 +99,7 @@ int find_median(unsigned char* p, int size){                      //find_median 
     p++;
   }
   int temp;
-  for( i = 0 ; i < (size-1) ; i++){                               // sorting the array
+  for( i = 0 ; i < (size-1) ; i++){                               // sorting the array using two for loops
     for(int j = i; j <= size ; j++){
       if(arr[i] < arr[j]){
         temp = arr[i];                                          //swapping the elements
@@ -108,7 +108,7 @@ int find_median(unsigned char* p, int size){                      //find_median 
       }
     }
   }
-  int length = sizeof arr/sizeof arr[0];
+  int length = sizeof arr/sizeof arr[0];                        //calculating array length
   int median = 0;
   if(length%2 == 0){                                                      // checking whether the length of array is odd or even
     median = (arr[(length/2)-1]+arr[(length/2)])/2;
@@ -161,15 +161,15 @@ void sort_array(unsigned char* p ,int size){            //sort_array function
 
   int i;
   int arr[40];
-  for( i = 0 ; i < (size) ; i++){
+  for( i = 0 ; i < (size) ; i++){                       //copying all the elements into arr[] array
     arr[i] = *p;
     p++;
   }
   int temp;
-  for( i = 0 ; i < (size-1) ; i++){
+  for( i = 0 ; i < (size-1) ; i++){                       //using two for loops to check the largest element from picked two elements
     for(int j = i; j <= size ; j++){
       if(arr[i] < arr[j]){
-        temp = arr[i];                                      // swapping the elements
+        temp = arr[i];                                      //if not swapping the elements
         arr[i] = arr[j];
         arr[j] = temp;
       }

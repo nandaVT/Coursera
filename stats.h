@@ -30,11 +30,11 @@
     of the given array.
   *
   * @param  test The array
-  * @param  SIZE The length of the given array.
+  * @param  size The length of the given array.
   *
   * @return NO_RETURN_VARIABLE
   */
-  void print_statistics(char test, int SIZE);
+  void print_statistics(unsigned char* test, int size);
 
   /**
    * @brief To print all the array elements.
@@ -42,11 +42,11 @@
    * This function prints all the array elements.
    *
    * @param test The array
-   * @param SIZE The length of the given array.
+   * @param size The length of the given array.
    *
    * @return NO_RETURN_VARIABLE
    */
-   void print_array(char test, int SIZE);
+   void print_array(unsigned char* test, int size);
 
    /**
     * @brief We find the median of the given array.
@@ -54,12 +54,12 @@
     * Using the given array we find the median of all the elements.
     *
     * @param test The array
-    * @param SIZE The length of the given array.
+    * @param size The length of the given array.
     * @param median Stores the median of the array.
     *
     * @return median of the array
     */
-    int find_median(char test, int SIZE);
+    int find_median(unsigned char* test, int size);
 
     /**
      * @brief We find the mean of the given array.
@@ -67,12 +67,12 @@
      * Using the given array we find the median of all the elements.
      *
      * @param test The array
-     * @param SIZE The length of the given array.
+     * @param size The length of the given array.
      * @param mean Stores the mean of the array
      *
      * @return mean of the array
      */
-     int find_mean(char test, int SIZE);
+     int find_mean(unsigned char* test, int size);
 
      /**
       * @brief To find maximum element of the given array.
@@ -80,12 +80,12 @@
       * Using the given array we find the maximum element.
       *
       * @param test The array
-      * @param SIZE The length of the given array.
+      * @param size The length of the given array.
       * @param maximum Stores the maximum of the array.
       *
       * @return maximum element of the array.
       */
-      int find_maximum(char test, int SIZE);
+      int find_maximum(unsigned char* test, int size);
 
       /**
        * @brief To find minimum element of the given array.
@@ -93,12 +93,12 @@
        * Using the given array we find the minimum element.
        *
        * @param test The array
-       * @param SIZE The length of the given array.
+       * @param size The length of the given array.
        * @param minimum Stores the minimum of the array
        *
        * @return minimum element of the array.
        */
-       int find_minimum(char test, int SIZE);
+       int find_minimum(unsigned char* test, int size);
 
 
 #endif /* __STATS_H__ */

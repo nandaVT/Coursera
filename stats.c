@@ -2,23 +2,31 @@
  * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain this copyright. Users are 
+ * forms is permitted as long as the files maintain this copyright. Users are
  * permitted to modify this and use it to learn about the field of embedded
  * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
+ * misuse of this material.
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief This is Week 1 assignment.
  *
- * <Add Extended Description Here>
+ * This code contains 7 user defined function and print the Statistics, array,
+    median, mean,  maximum and minimum of the given array.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Nanda Vardhan Thupalli
+ * @date April 24, 2020
  *
  */
 
+int print_statistics(char test, int SIZE);
+int print_array(char test, int SIZE);
+int find_median(char test, int SIZE);
+int find_median(char test, int SIZE);
+int find_mean(char test, int SIZE);
+int find_maximum(char test, int SIZE);
+int find_minimum(char test, int SIZE);
 
 
 #include <stdio.h>
